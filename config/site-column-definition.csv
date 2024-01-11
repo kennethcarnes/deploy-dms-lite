@@ -1,0 +1,17 @@
+DisplayName,InternalName,Type,Required,Choices,Formula
+Department,Department,Choice,True,Accounting; Customer Service; Executive; Sales; Marketing; Information Technology; Laboratory; EHS; Human Resources; Operations,
+DocumentType,DocType,Choice,True,DOCUMENT; FORM; PROCEDURE; POLICY; CERTIFICATION; LICENSE; VIDEO,
+Code,Code,Text,False,
+NextDocID,NextDocID,Text,False,
+NextDocNumber,NextDocNumber,Calculated,False,,"="Doc-" & YEAR([Created]) & "-" & ID"
+RootPath,RootPath,Text,False,
+Document Number,DocNumber,Text,False,
+Document Type,DocType,Choice,False,
+Area,Area,Choice,False,Shipping; Receiving; MP&C; Freight Coordinator; Packaging; Production; Engineer; Maintenance; Processes; Pricing,
+Responsible,Responsible,User,False,
+Expiration Date,ExpirationDate,DateTime,False,
+Document ID,DocID,Text,False,
+Document Link,DocLocation,URL,False,
+Current Version,CurrentVersion,Text,False,
+Status,Status,Text,False,
+AllCompany,AllCompany,Boolean,False,
